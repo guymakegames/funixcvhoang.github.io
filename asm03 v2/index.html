@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="css/tablet.css"/>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="css/phone.css"/>
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <!--BANNER ------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <div id="banner">
+      <img
+        src="images/banner.jpg"
+        alt="banner-cv"
+        class="img-fluid banner-img"
+        width="100%"
+      />
+      <div class="banner-text">
+        <h1>Nguyễn Văn A</h1>
+        <span>Full Stack Developer</span>
+      </div>
+    </div>
+    <!--NAVBAR-------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section id="nav-bar">
+      <nav class="container">
+        <a class="icon" href="#nav-bar"><i class="icon-user"></i>Thông tin</a>
+        <a class="icon" href="#about"
+          ><i class="icon-doc-text-inv"></i>Lý Lịch</a
+        >
+        <div class="nav-name">
+          <h2>Nguyễn Văn A</h2>
+          <p>Full Stack Developer</p>
+        </div>
+        <a class="icon" href="#certificate"
+          ><i class="icon-mail-alt"></i>Chứng chỉ</a
+        >
+        <a class="icon" href="#project"><i class="icon-star-1"></i>Dự Án</a>
+      </nav>
+    </section>
+
+
+    <!--ABOUT---------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section id="about">
+      <div class="about justify-content-center">
+        <div class="mtnn" style="background: #F5F5F5;">
+          <h1 class="mtnnt" style="padding-left: 20px;">Mục tiêu nghề nghiệp</h1>
+          <p style="padding-left: 20px; padding-right: 20px;">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+  
+        <div class="container-fluid bg-body-secondary" style="background-color:#E9ECEF">
+          <h1 id="title">Thông tin cá nhân</h1>
+          <div id="ttcn">
+          <ul class="info px-0">
+            <li><strong>Giới tính</strong> : abcd</li>
+            <li><strong>Ngày sinh</strong> : abcd</li>
+            <li><strong>Điện thoại</strong> : abcd</li>
+            <li><strong>Email</strong> : abcd</li>
+            <li><strong>Địa chỉ</strong> : abcd</li>
+            <li><strong>Website</strong> : abcd</li>
+          </ul>
+          <div class="icon">
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-twitter"></i></a> 
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a> 
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-gplus"></i></a> 
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-linkedin"></i></a> 
+          </div>
+        </div>
+          <div id="mail">
+            <form name="form1" action="#">
+              <ul id="email-list">
+                <li><input type="text" name="text1" placeholder="Email here" /></li>
+                <li class="xac-thuc">Hãy nhập email để sác thực</li>
+                <li class="validate">
+                  <input
+                    id="validate"
+                    type="button"
+                    name="validate"
+                    value="submit"
+                    onclick="ValidateEmail(document.form1.text1)"
+                  />
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--JOB THING  --------------------------------------------------------------------------------------------------------------------------------------------->
+<section id="job-info">
+  <div id="job-grid" style="padding-bottom: 30px;">
+    <div id="job-box-grid" style="margin-top: 20px">
+      
+      <div class="job-title">
+        <h1>Kinh nghiệm</h1>
+      </div>
+      <div class="job-icon"> <i class="ic-toolbox" style="font-size: 38px"></i></div>
+      <button id="button-email" onclick="hideshow()">VIEW MORE</button>
+      <div id="job-content">
+        <h3> <div class="dot" style="margin-bottom: 2px;"> &#x2022;</div>Full Stack Developer-</h3>
+        <div style="margin-left: 25px;">
+          <span>05/2022 -</span><span class="now">Hiện tại</span>
+        </div>
+        <div class="list">
+        <div>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      
+            <h3 class="title"> <div class="dot"  style="margin-bottom: 2px;"> &#x2022;</div>Công ty Y</h3>
+            <div class="list">
+        <div>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="job-box-grid" style="margin-top: 20px">
+      <div class="job-title">
+        <h1>Học vấn</h1>
+      </div>
+      <div class="job-icon"> <i class="ic-toolbox" style="font-size: 38px"></i></div>
+      <button id="button-email1" onclick="hideshow1()">VIEW MORE</button>
+      <div id="job-content2">
+        <h3> <div class="dot"  style="margin-bottom: 2px;"> &#x2022;</div>Full Stack Developer-</h3>
+
+
+        <div style="margin-left: 25px;">
+        </div>
+        <div class="list">
+        <div>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+
+            <h3 class="title"> <div class="dot"> &#x2022;</div>Công ty Y</h3>
+            <div class="list">
+        <div>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div id="job-box-grid" style="margin-top: 20px">
+      <div class="job-title">
+        <h1>Hoạt động</h1>
+      </div>
+      <div class="job-icon"> <i class="ic-toolbox" style="font-size: 38px"></i></div>
+      <button id="button-email2" onclick="hideshow2()">VIEW MORE</button>
+      <div id="job-content3">
+        <h3> <div class="dot"  style="margin-bottom: 2px;"> &#x2022;</div>Full Stack Developer-</h3>
+        <div style="margin-left: 25px;">
+        </div>
+        <div class="list">
+        <div>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+
+            <h3 class="title"> <div class="dot"  style="margin-bottom: 2px;"> &#x2022;</div>Công ty Y</h3>
+            <div class="list">
+        <div>
+          <p>
+            -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="job-box-grid" style="margin-top: 20px">
+      <div class="job-title" >
+        <h1>Sở thích</h1>
+      </div>
+      <div class="job-icon"> <i class="ic-telescope" style="font-size: 38px"></i></div>
+      <button id="button-email3" onclick="hideshow3()">VIEW MORE</button>
+      <div id="job-content1"> 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ballicons">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="ballicons">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ballicons">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ballicons">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+          </svg>
+          <p>Âm nhạc &nbsp; Chơi game &nbsp; Du lịch &nbsp; &nbsp; Nấu ăn</p>
+      </div>
+      </div>
+
+
+      <div id="job-box-grid" style="margin-top: 20px">
+        <div class="job-title">
+          <h1>Ngôn ngữ</h1>
+        </div>
+        <div class="job-icon"> <i class="ic-mic" style="font-size: 38px"></i></div>
+        <button id="button-email4" onclick="hideshow4()">VIEW MORE</button>
+        <div id="job-content4"> 
+          <div style="margin-bottom: 2rem;">
+            <p>Tiếng Anh - IELTS 5.0</p>
+            <span class="full"></span> <span class="full"></span> <span class="empty">
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <p>Tiếng Nhật - JPLT N4</p>
+            <span class="full"></span> <span class="empty"></span> <span class="empty">
+          </div>
+        </div>
+      </div>
+
+
+      <div id="job-box-grid" style="margin-top: 20px">
+        <div class="job-title">
+          <h1>Kỹ Năng</h1>
+        </div>
+        <div class="job-icon"> <i class="ic-mic" style="font-size: 38px"></i></div>
+        <button id="button-email5" onclick="hideshow5()">VIEW MORE</button>
+        <div id="job-content5"> 
+          <div style="margin-bottom: 2rem;">
+            <p>Tiếng Anh - IELTS 5.0</p>
+            <span class="full"></span> <span class="full"></span> <span class="empty">
+          </div>
+
+          <div stylewq="margin-bottom: 2rem;">
+            <p>Tiếng Nhật - JPLT N4</p>
+            <span class="full"></span> <span class="empty"></span> <span class="empty">
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <p>Tiếng Anh - IELTS 5.0</p>
+            <span class="full"></span> <span class="full"></span> <span class="empty">
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <p>Tiếng Nhật - JPLT N4</p>
+            <span class="full"></span> <span class="empty"></span> <span class="empty">
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!--CERTIFICATES------------------------------------------------------------------------------->
+      <section id="certificate" style="background: #F5F5F5;">
+        <div class="container">
+          <div class="cer-grid">
+          <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+          <div class="cert cert1">
+            <img class="cert-img img-fluid" src="images/Cert_WEB.png" alt="Web Certification">
+            <div id="cert-content">
+              <h4 class="cer-title">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</h4>
+              <p >- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.6</p>
+            </div>
+          </div>
+          <div class="cert cert2">
+            <img class="cert-img img-fluid" src="images/Cert_PRF.png" alt="Web Certification">
+            <div id="cert-content">
+              <h4 class="cer-title">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</h4>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.6</p>
+            </div>
+          </div>
+          <div class="cert cert3">
+              <img class="cert-img img-fluid" src="images/Cert_WEB.png" alt="Web Certification">
+              <div id="cert-content">
+                <h4 class="cer-title">CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</h4>
+                <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                <p>- GPA: 8.9</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </section>
+<!--------------------------------------------------------------------------------------------->
+      <section id="project">
+        <div class="container">
+          <h1 class="section-title" style="margin-bottom: 30px;">
+            Dự án
+          </h1>
+          <div class="project-grid">
+            <div class="project-flex">
+              <img width="100%" src="images/project_1.png" alt="projectimg1">
+              <div class="project-title" style="margin-bottom: 10px; border-bottom: 2px solid #BDC3C7">CV CÁ NHÂN</div>
+              <div class="project-border" style="margin-bottom: 10px; margin-left: 20px; ">
+                <span class="now" style="margin-right: 20px;">2021</span>
+                <i class="icon-user-1"></i>
+                <span style="margin-left: 4px; margin-right: 20px;">FUNiX</span>
+                <i class="icon-lamp"></i>
+                <span style="margin-left: 4px; margin-right: 20px;">Dev</span>
+              </div>
+              <table>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+    
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+    
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+              </table>
+            </div>
+    
+            <div class="project-flex">
+              <img  class="img-fluid" src="images/project_2.png" alt="projectimg1" width="100%">
+              <div class="project-title" style="margin-bottom: 10px; border-bottom: 2px solid#BDC3C7">CV CÁ NHÂN</div>
+              <div class="project-border" style="margin-bottom: 10px; margin-left: 20px; ">
+                <span class="now" style="margin-right: 20px;">2021</span>
+                <i class="icon-user-1"></i>
+                <span style="margin-left: 4px; margin-right: 20px;">FUNiX</span>
+                <i class="icon-lamp"></i>
+                <span style="margin-left: 4px; margin-right: 20px;">Dev</span>
+              </div>
+              <table>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+    
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+    
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+              </table>
+              
+            </div>
+    
+            <div class="img-fluid project-flex">
+              <img src="images/project_3.png" alt="projectimg1" width="100%">
+    
+              <div class="project-title" style="margin-bottom: 10px; border-bottom: 2px solid #BDC3C7">CV CÁ NHÂN</div>
+              <div class="project-border" style="margin-bottom: 10px; margin-left: 20px; ">
+                <span class="now" style="margin-right: 20px;">2021</span>
+                <i class="icon-user-1"></i>
+                <span style="margin-left: 4px; margin-right: 20px;">FUNiX</span>
+                <i class="icon-lamp"></i>
+                <span style="margin-left: 4px; margin-right: 20px;">Dev</span>
+              </div>
+              <table>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+    
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+    
+                <tr>
+                  <td>Mô tả</td>
+                  <td>lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+              </table>
+              
+            </div>
+          </div>
+        </div>   
+      </section>
+
+      <section id="footer" style="background: #F5F5F5;">
+        <div class="footer-text">
+          <a href="#">
+            <i class="icons icon-facebook-circled" style="font-size: 28px;"></i> Facebook
+          </a>
+    
+          <a href="#">
+            <i class="icons icon-linkedin" style="font-size: 28px;"></i> linkedin
+          </a>
+    
+          <a href="#">
+            <i class="icons icon-github-circled" style="font-size: 28px;"></i> Github
+          </a>
+    
+        </div>
+      </section>
+      <script src="script.js"></script>
+  </body>
+</html>

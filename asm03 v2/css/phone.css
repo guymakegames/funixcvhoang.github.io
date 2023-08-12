@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+  #banner {
+    height: 100%;
+  }
+
+  #nav-bar .container {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #nav-bar a:link,
+  a:visited {
+    display: block;
+    padding: 10px;
+    border-left: none;
+    text-align: left;
+  }
+
+  .nav-name {
+    display: none;
+  }
+
+  .about {
+    display: block;
+  }
+
+  #job-grid {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  .cer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert2 {
+    border-left: 1px solid white;
+    padding-left: 0px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  .project-flex {
+    margin-bottom: 30px;
+  }
+}
